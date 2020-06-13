@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "71223fed-e269-4a76-8682-71aa1acda80c",
+		"name": "NextLevelWeek",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Exemple",
+			"item": [
+				{
+					"name": "getExemple",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlBase}}users",
+							"host": [
+								"{{urlBase}}users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getExempleRequestParam",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlBase}}users/1",
+							"host": [
+								"{{urlBase}}users"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getExempleQueryParam",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlBase}}users?search=",
+							"host": [
+								"{{urlBase}}users"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postExempleRequestBody",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ajfiumanee\",\r\n    \"email\": \"ajfiumanee@outlook.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlBase}}users",
+							"host": [
+								"{{urlBase}}users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postExemple",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{urlBase}}users",
+							"host": [
+								"{{urlBase}}users"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8f70f4b9-9497-4f17-a60f-b03060e760b8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d927e3e5-5d7c-4bf2-832f-844e75338fb0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
