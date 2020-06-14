@@ -98,6 +98,85 @@
 				}
 			],
 			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "List Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlBase}}items",
+					"host": [
+						"{{urlBase}}items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Point",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mercado Imperatriz\",\r\n    \"email\": \"contato@imperatriz.com.br\",\r\n    \"whatsapp\": \"17999999999\",\r\n    \"latitude\": 211109,\r\n    \"longitude\": 485426,\r\n    \"city\": \"Pindorama\",\r\n    \"uf\": \"SP\",\r\n    \"items\": [\r\n        1,\r\n        2,\r\n        6\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{urlBase}}points",
+					"host": [
+						"{{urlBase}}points"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Point ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlBase}}points",
+					"host": [
+						"{{urlBase}}points"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Point Filtered",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlBase}}points?city=Pindorama&uf=SP&items=1,2",
+					"host": [
+						"{{urlBase}}points"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Pindorama"
+						},
+						{
+							"key": "uf",
+							"value": "SP"
+						},
+						{
+							"key": "items",
+							"value": "1,2"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
