@@ -3,6 +3,8 @@
 # environments
 src/environments/
 
+# SQLITE
+*.sqlite
 
 # compiled output
 /dist
