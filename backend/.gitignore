@@ -5,6 +5,7 @@ src/environments/
 
 # SQLITE
 *.sqlite
+*.sqlite-journal
 
 # compiled output
 /dist
